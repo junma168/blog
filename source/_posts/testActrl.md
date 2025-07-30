@@ -10,8 +10,10 @@ categories:
 # 截位直除
 
 hexo clean
-hexo g
+hexo g 
 hexo s
+
+测试测试测试测试测试测试测试测试测试测试测试测试
 
 1. 一步除法只截分母，多步除法分子分母都截
 
