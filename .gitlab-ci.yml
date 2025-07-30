@@ -15,3 +15,5 @@ pages:
       - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+script:
+  - "curl -X POST --fail -F token=glptt-d7b9d461ff638a2dcab8dbde6dd5f886fa6e593d -F ref=REF_NAME https://gitlab.com/api/v4/projects/49315253/trigger/pipeline"
