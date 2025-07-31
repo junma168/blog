@@ -1,0 +1,10 @@
+ # .gitignore 文件的内容
+
+ .DS_Store
+ Thumbs.db
+ db.json
+ *.log
+ node_modules/
+ public/
+ .deploy*/
+ _multiconfig.yml

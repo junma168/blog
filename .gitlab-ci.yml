@@ -1,4 +1,6 @@
-image: node:22-alpine
+# .gitlab-ci.yml 文件的内容
+
+image: node:22-alpine # use nodejs v10 LTS
 cache:
   paths:
     - node_modules/
@@ -9,11 +11,9 @@ before_script:
 
 pages:
   script:
-    - npm run build
+    - hexo generate
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-script:
-  - "curl -X POST --fail -F token=glptt-d7b9d461ff638a2dcab8dbde6dd5f886fa6e593d -F ref=REF_NAME https://gitlab.com/api/v4/projects/49315253/trigger/pipeline"
+  only:
+    - master
