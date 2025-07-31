@@ -1,6 +1,4 @@
-# .gitlab-ci.yml 文件的内容
-
-image: node:22-alpine # use nodejs v10 LTS
+image: node:22-alpine
 cache:
   paths:
     - node_modules/
@@ -11,9 +9,9 @@ before_script:
 
 pages:
   script:
-    - hexo generate
+    - npm run build
   artifacts:
     paths:
       - public
-  only:
-    - master
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
