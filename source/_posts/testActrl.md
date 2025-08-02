@@ -1,10 +1,14 @@
 ---
-title: 我的第一份博客
-date: 2025-07-30 01:40:00
+title: 考公资料学习
+date: 2025-08-01 19:10:19
 tags:
-  - test
+  - study
 categories:
-  - 学习
+  - 考公
+keywords: "hexo重新部署恢复"
+description: "考公资料"  # 冒号后有空格
+top_img:         # 保持空值格式
+cover: "https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-3.png"  # URL加引号
 ---
 
 # 截位直除
@@ -28,7 +32,7 @@ hexo s
 
 ​	![image-20250730013741995](资料分析知识点总结.assets/image-20250730013741995.png)
 
-
+![image-20250730014352546](testActrl.assets/image-20250730014352546.png)
 
 # 分数比较
 
