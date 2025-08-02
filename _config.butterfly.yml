@@ -60,8 +60,8 @@ social:
 # --------------------------------------
 # Image Settings
 # --------------------------------------
-
-favicon: /img/favicon.png
+# 网站的 favicon 图标
+favicon:
 
 avatar:
   img: /img/avatar.png
