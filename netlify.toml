@@ -1,7 +1,0 @@
-[build]
-  command = "npm install && npm run build"
-  publish = "public"
-
-[build.environment]
-  NETLIFY_SKIP_SUBMODULE = "true"  # 禁用子模块初始化
-  NODE_VERSION = "22"  # 使用 Node.js 22 版本
