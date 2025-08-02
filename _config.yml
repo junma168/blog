@@ -115,6 +115,7 @@ format: html
 #limit: 10000
 content: true
 
+# 这是有vip限制的那版
 aplayer:
   meting: true
   asset_inject: false

@@ -38,7 +38,7 @@ menu:
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
   theme: light
-  macStyle: false
+  macStyle: true
   # Code block height limit (unit: px)
   height_limit: false
   word_wrap: false
@@ -175,8 +175,8 @@ subtitle:
   source: true
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
-    - 今日事,今日毕
-    - Never put off till tomorrow what you can do today
+    - 给时光以生命，给岁月以文明
+    # - Never put off till tomorrow what you can do today
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -998,9 +998,13 @@ pjax:
     # - /xxxxxx/
 
 # Inject the css and script (aplayer/meting)
+# 这是有vip限制的那版
 aplayerInject:
   enable: true
   per_page: true
+
+
+
 
 # Snackbar - Toast Notification
 # https://github.com/polonel/SnackBar
@@ -1065,13 +1069,23 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     # aplayer音乐
     - # aplayer音乐
-    - <div class="aplayer no-destroy" data-id="8152976493" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div>
+#     常用的选项如下所示:
+# server可选：netease（网易云音乐），tencent（QQ音乐），kugou（酷狗音乐），xiami（虾米音乐），baidu（百度音乐）。建议网易云
+# type可选：song（歌曲），playlist（歌单），album（专辑），search（搜索关键字），artist（歌手）。添加单曲选的歌曲，歌单选择playlist，可以自行尝试。
+# id获取示例: 打开网易云音乐，选择喜欢的歌单，在网页版打开，获取歌单list，填入即可。使用的时候将上边的ID号换为自己喜欢的歌单即可。注意歌单中不能包括VIP音乐，否则无法解析。建议单独建立一个歌单，以后有喜欢的音乐添加进去，网页也会自动同步添加。
+# lrcType设置为 -1默认显示歌词，放在fixed模式下比较合适。
+# 这是有vip限制的那版
+    - <div class="aplayer no-destroy" data-id="3778678" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div>
+
+
+    
   bottom:
     # - <script src="xxxx"></script>
-
+    
 # CDN Settings
 # Don't modify the following settings unless you know how they work
 CDN:
+
   # The CDN provider for internal and third-party scripts
   # Options for both: local/jsdelivr/unpkg/cdnjs/custom
   # Note: Dev version can only use 'local' for internal scripts
