@@ -123,13 +123,15 @@ aplayer:
 
   # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: git
-#   repository: https://github.com/junma168/blog.git
-#   branch: master
+deploy:
+  type:
+  # type: git
+  # repository: https://github.com/junma168/blog.git
+  # branch: master
 # hexo-admin authentification
 # admin:
 #   username: admin
 #   password_hash: $2a$10$CmyrTjyDl00TzSJH2YIX2uZ0Js7FUxkCzYUyVMmBlv6T9ToNksMKK
 #   secret: firstlove
 #   deployCommand: 'hexo-deploy.bat'
+# hexo-admin authentification
