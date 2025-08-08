@@ -135,3 +135,14 @@ deploy:
 #   secret: firstlove
 #   deployCommand: 'hexo-deploy.bat'
 # hexo-admin authentification
+
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+
