@@ -1168,7 +1168,7 @@ CDN:
 #顶部图
 index_img: /image/miku.jpg
 default_top_img: /image/miku.jpg
-index_top_img_height: 400px #顶部图高度
+index_top_img_height: #顶部图高度  400px
 
 
 # 友链样式，butterfly为默认样式，volantis为站点卡片样式，flexcard为弹性卡片样式
