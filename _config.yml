@@ -70,8 +70,16 @@ content: true
 aplayer:
   meting: true
   asset_inject: false
-deploy:
-  type: git
-  repo: https://github.com/junma168/blog.git
-  branch: master
-  message: ceshi
+# deploy:
+#   type: git
+#   repo: https://github.com/junma168/blog.git
+#   branch: master
+#   message: 'Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }}'
+# kramed:
+#   gfm: true
+#   pedantic: false
+#   sanitize: false
+#   tables: true
+#   breaks: true
+#   smartLists: true
+#   smartypants: true
