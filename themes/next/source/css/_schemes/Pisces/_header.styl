@@ -1,0 +1,36 @@
+.column {
+  width: $sidebar-width-dual-column;
+
+  +tablet-mobile() {
+    width: auto;
+  }
+}
+
+.site-brand-container {
+  //background: var(--theme-color); // 默认背景
+  background: url('https://images.unsplash.com/photo-1668871333606-ef8461d43922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60');
+
+  .site-nav-on & {
+    +tablet-mobile() {
+      box-shadow: 0 0 16px rgba(0, 0, 0, .5);
+    }
+  }
+}
+
+.site-meta {
+  padding: 20px 0;
+}
+
+.site-nav-toggle, .site-nav-right {
+  +tablet() {
+    flex-column();
+  }
+
+  .toggle {
+    color: white;
+
+    .toggle-line {
+      background: white;
+    }
+  }
+}
