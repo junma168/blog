@@ -1,0 +1,7 @@
+{
+  "repository": "junma168/blog",
+  "branch": "master",
+  "message": "Site updated: {{ now(\"YYYY-MM-DD HH:mm:ss\") }}",
+  "token": "",
+  "lastDeployTime": "2025-08-10T09:36:02.704Z"
+}

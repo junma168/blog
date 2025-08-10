@@ -14,3 +14,4 @@ echo "themes/butterfly/source/js/twikoo.all.min.js" >> .gitignore
 
 # 如果您有其他 minified 文件，建议添加更通用的规则
 echo "themes/butterfly/source/js/*.min.js" >> .gitignore.deploy_git
+.deploy_git/
