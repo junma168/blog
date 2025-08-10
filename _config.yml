@@ -74,4 +74,4 @@ deploy:
   type: git
   repo: https://github.com/junma168/blog.git
   branch: master
-  message: 客户端测试
+  message: butterfly配置文件
