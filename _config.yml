@@ -74,4 +74,4 @@ deploy:
   type: git
   repo: https://github.com/junma168/blog.git
   branch: master
-  message: butterfly配置文件
+  message: blog respact
