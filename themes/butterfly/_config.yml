@@ -18,10 +18,20 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+   #Home: / || fas fa-home
+   首页: / || fas fa-home
+   时间轴: /archives/ || fas fa-archive
+   标签: /tags/ || fas fa-tags
+   分类: /categories/ || fas fa-folder-open
+   清单||fa fa-heartbeat:
+    #  音乐: /music/ || fas fa-music
+     留言板: /comments/ || fas fa-envelope
+     照片: /photos/ || fas fa-images
+    #  测试: /test/|| fas fa-video
+     电影: /movies/ || fas fa-video
+   友链: /link/ || fas fa-link
+   关于: /about/ || fas fa-heart
+   
 
 # --------------------------------------
 # Code Blocks Settings
@@ -30,7 +40,7 @@ menu:
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
   theme: light
-  macStyle: false
+  macStyle: true
   # Code block height limit (unit: px)
   height_limit: false
   word_wrap: false
@@ -52,21 +62,26 @@ social:
 # --------------------------------------
 # Image Settings
 # --------------------------------------
+# 网站的 favicon 图标
+favicon: /image/favicon-32x32-butterfly.png
+  # small: /image/favicon-16x16-butterfly.png
+  # medium: /image/favicon-32x32-butterfly.png
+  
 
-favicon: /img/favicon.png
+
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/avatar.png
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+#default_top_img:
 
-# The banner image of index page
-index_img:
+
+
 
 # The banner image of archive page
 archive_img:
@@ -88,11 +103,11 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: true
 
 # Website Background
 # Can set it to color or image url
-background:
+#background:/blog/img/xx.png
 
 cover:
   # Disable the cover or not
@@ -102,6 +117,9 @@ cover:
   # When cover is not set, the default cover is displayed
   default_cover:
     # - xxx.jpg
+    - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg2.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg3.png
 
 # Replace Broken Images
 error_img:
@@ -144,11 +162,11 @@ post_meta:
 # The position of site info, eg: 300px/300em/300rem/10%
 index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem
-index_top_img_height:
+#index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -161,9 +179,11 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - https://api.aa1.cn/doc/yiyan.html
   # 3 - jinrishici.com
-  source: false
+  source: true
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - 给时光以生命，给岁月以文明
+    # - Never put off till tomorrow what you can do today
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -191,11 +211,11 @@ index_post_content:
 
 toc:
   post: true
-  page: false
+  page: true
   number: true
-  expand: false
+  expand: true
   # Only for post
-  style_simple: false
+  style_simple: true
   scroll_percent: true
 
 post_copyright:
@@ -288,10 +308,10 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 这是第一次发布公告
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -307,17 +327,17 @@ aside:
     storage: 10
     avatar: true
   card_categories:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 8
     # Choose: none / true / false
     expand: none
     sort_order:
   card_tags:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 40
-    color: false
+    color: true
     # Order of tags, random/name/length
     orderby: random
     # Sort of order. 1, asc for ascending; -1, desc for descending
@@ -335,7 +355,7 @@ aside:
     limit: 8
     sort_order:
   card_post_series:
-    enable: true
+    enable: false
     # The title shows the series name
     series_title: false
     # Order by title or date
@@ -350,8 +370,8 @@ aside:
     # Time difference between publish date and now
     # Formal: Month/Day/Year Time or Year/Month/Day Time
     # Leave it empty if you don't enable this feature
-    runtime_date:
-
+    #runtime_date: 
+    runtime_date: "08/02/2025 00:00:00"
 # --------------------------------------
 # Bottom right button
 # --------------------------------------
@@ -451,7 +471,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: mathjax
   per_page: true
   hide_scrollbar: false
 
@@ -469,11 +489,16 @@ math:
 # Search
 # --------------------------------------
 
-search:
+#search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
-  placeholder:
+  # use:local_search
+  # placeholder:
+# 搜索设置 (正确缩进示例)
+search:
+  use: local_search  # ← 使用 2 空格缩进
+  placeholder: 搜索...  # ← 相同缩进
+
 
   # Algolia Search
   algolia_search:
@@ -489,6 +514,8 @@ search:
     # Unescape html strings to the readable one.
     unescape: false
     CDN:
+
+
 
   # Docsearch
   # https://docsearch.algolia.com/
@@ -526,7 +553,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: Twikoo
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -536,6 +563,7 @@ comments:
   count: false
   # Display comment count in Home Page
   card_post_count: false
+ 
 
 # Disqus
 # https://disqus.com/
@@ -611,15 +639,15 @@ facebook_comments:
   order_by: social
   lang: en_US
 
-# Twikoo
-# https://github.com/imaegoo/twikoo
+
+# https://github.com/imaegoo/twikoo      rococo-kitsune-9f8db4.netlify.app
 twikoo:
-  envId:
+  envId: https://rococo-kitsune-9f8db4.netlify.app/.netlify/functions/twikoo
   region:
   # Use Twikoo visitor count as the page view count
-  visitor: false
+  visitor: true
   option:
-
+  # cdn: /js/twikoo.all.min.js
 # Giscus
 # https://giscus.app/
 giscus:
@@ -785,7 +813,7 @@ mask:
 
 # Loading Animation
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
@@ -846,7 +874,7 @@ canvas_ribbon:
   enable: false
   # The size of ribbon
   size: 150
-  # The opacity of ribbon (0 ~ 1)
+  # The opacity of ribbon (0 \x7e 1)
   alpha: 0.6
   zIndex: -1
   click_to_change: false
@@ -854,7 +882,7 @@ canvas_ribbon:
 
 # Fluttering Ribbon
 canvas_fluttering_ribbon:
-  enable: false
+  enable: true
   mobile: false
 
 # canvas_nest
@@ -873,7 +901,7 @@ canvas_nest:
 
 # Mouse click effects: fireworks
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999
   mobile: false
 
@@ -901,7 +929,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: medium_zoom# 注意这里的缩进层级
 
 # --------------------------------------
 # Tag Plugins settings
@@ -972,15 +1000,19 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
 
 # Inject the css and script (aplayer/meting)
+# 这是有vip限制的那版
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
+
+
+
 
 # Snackbar - Toast Notification
 # https://github.com/polonel/SnackBar
@@ -994,7 +1026,7 @@ snackbar:
 
 # Instant.page
 # https://instant.page/
-instantpage: false
+instantpage: true
 
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
@@ -1018,6 +1050,7 @@ pwa:
   favicon_16_16:
   mask_icon:
 
+  
 # Open graph meta tags
 # https://hexo.io/docs/helpers#open-graph
 Open_Graph_meta:
@@ -1043,12 +1076,25 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    # aplayer音乐
+    # - # aplayer音乐
+#     常用的选项如下所示:
+# server可选：netease（网易云音乐），tencent（QQ音乐），kugou（酷狗音乐），xiami（虾米音乐），baidu（百度音乐）。建议网易云
+# type可选：song（歌曲），playlist（歌单），album（专辑），search（搜索关键字），artist（歌手）。添加单曲选的歌曲，歌单选择playlist，可以自行尝试。
+# id获取示例: 打开网易云音乐，选择喜欢的歌单，在网页版打开，获取歌单list，填入即可。使用的时候将上边的ID号换为自己喜欢的歌单即可。注意歌单中不能包括VIP音乐，否则无法解析。建议单独建立一个歌单，以后有喜欢的音乐添加进去，网页也会自动同步添加。
+# lrcType设置为 -1默认显示歌词，放在fixed模式下比较合适。
+# 这是有vip限制的那版
+    - <div class="aplayer no-destroy" data-id="3778678" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div>
+
+    
+    
   bottom:
     # - <script src="xxxx"></script>
-
+    
 # CDN Settings
 # Don't modify the following settings unless you know how they work
 CDN:
+
   # The CDN provider for internal and third-party scripts
   # Options for both: local/jsdelivr/unpkg/cdnjs/custom
   # Note: Dev version can only use 'local' for internal scripts
@@ -1119,3 +1165,36 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+#顶部图dd
+index_img: /image/miku.jpg
+default_top_img: /image/miku.jpg
+index_top_img_height: #顶部图高度  400px
+
+
+# 友链样式，butterfly为默认样式，volantis为站点卡片样式，flexcard为弹性卡片样式
+flink_style: flexcard # butterfly | volantis | flexcard
+
+
+#留言板
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:
+    cover: https://cdn.cbd.int//hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://cdn.cbd.int/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://cdn.cbd.int/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://cdn.cbd.int/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+  height: #1050px，信封划出的高度
+  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板
+    comments: true
