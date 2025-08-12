@@ -1,0 +1,16 @@
+---
+title: ss
+tags:
+  - 文档
+cover: https://s21.ax1x.com/2025/08/12/pVw9KJ0.jpg
+categories: []
+date: 2025-07-30 01:33:19
+---
+往年出差之余旅游照片
+
+![pVw956S.jpg](https://s21.ax1x.com/2025/08/12/pVw956S.jpg)
+
+![pVw94l8.jpg](https://s21.ax1x.com/2025/08/12/pVw94l8.jpg)
+
+
+![pVw9hSf.jpg](https://s21.ax1x.com/2025/08/12/pVw9hSf.jpg)

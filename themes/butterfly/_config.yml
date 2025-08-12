@@ -929,7 +929,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox: medium_zoom# 注意这里的缩进层级
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
