@@ -74,4 +74,4 @@ deploy:
   type: git
   repo: https://github.com/junma168/blog.git
   branch: master
-  message: 新增文章-旅行
+  message: 新增文章-资料分析1-4
