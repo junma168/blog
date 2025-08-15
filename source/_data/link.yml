@@ -25,3 +25,11 @@
       avatar: "https://butterfly.js.org/img/butterfly-icon.png"
       descr: "主题教程"
       siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+
+    - name: "安知鱼"
+      link: "https://blog.anheyu.com/"
+      avatar: "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"
+      descr:  "大佬"
+      siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+
+      
