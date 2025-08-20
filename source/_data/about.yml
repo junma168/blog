@@ -1,0 +1,154 @@
+#这是安知鱼的关于-关于本人的文件配置
+- class_name: 关于页
+  subtitle: 生活明朗，万物可爱✨
+  avatarImg: /img/avatar.png
+  avatarSkills:
+    left:
+      - 🤖️ 数码科技爱好者
+      - 🔍 分享与热心帮助
+      - 🏠 智能家居小能手
+      - 🔨 设计开发一条龙
+    right:
+      - 专修交互与设计 🤝
+      - 脚踏实地行动派 🏃
+      - 团队小组发动机 🧱
+      - 壮汉人狠话不多 💢
+  name: 本质微光
+  description: 是一名 计算机从业者、博主
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 学习
+      - 生活
+      - 程序
+      - 体验
+  helloAbout: Hello there!
+  skillsTips:
+    tips: 技能
+    title: 开启创造力
+  careers:
+    tips: 生涯
+    title: 无限进步
+    list:
+      # - desc: EDU,软件工程专业
+      #   color: "#357ef5"
+      # - desc: EDU,软件工程专业
+      #   color: "#357ef5"
+      # - desc: EDU,软件工程专业
+      #   color: "#357ef5"
+    img: https://bu.dusays.com/2023/04/21/644287166329b.png
+  statistic:
+    link: /archives
+    text: 文章隧道
+    cover: https://bu.dusays.com/2023/05/01/644f4b037b930.jpg
+  map:
+    title: 我现在住在
+    StrengthenTitle: 中国，北京
+    background: https://p.r311.com/site/bjtime/bjmap.jpg
+    backgroundDark: https://p.r311.com/site/bjtime/bjmap.jpg
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 1993
+    selfInfoTips2: 南昌理工学院
+    selfInfoContent2: 计算机软件
+    selfInfoTips3: 现在职业
+    selfInfoContent3: 待业👨‍🎓
+  personalities:
+    author_name: 执政官
+    personality_type: ESFJ-A
+    photo_url: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
+    personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
+    name_url: https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 生活明朗，
+    maxim_bottom: 万物可爱。
+  buff:
+    buff_tips: 特长
+    buff_top: 脑回路新奇的 酸菜鱼
+    buff_bottom: 二次元指数 MAX
+  game:
+    game_tips: 爱好游戏
+    game_title: Pubg
+    game_uid: "UID: 125766904"
+    game_bg: https://ossweb-img.qq.com/upload/webplat/info/cjm/20180201/465001050101173.jpg
+  comic:
+    comic_tips: 爱好动漫
+    comic_title: 国创
+    comic_list:
+      - name: 灵笼
+        href: https://www.bilibili.com/bangumi/play/ss46585?spm_id_from=333.337.0.0
+        cover: https://fanying-file.oss-cn-shanghai.aliyuncs.com/yhkt/business/animation/f96b3b55-70f3-4625-bdce-43e3cc63bff9.jpg
+      - name: 凡人修仙传
+        href: https://www.bilibili.com/bangumi/play/ss28747?spm_id_from=333.337.0.0
+        cover: https://n.sinaimg.cn/sinakd10114/251/w480h571/20200730/1a7b-iwxpesy3148489.jpg
+      - name: 黑门
+        href: https://www.bilibili.com/bangumi/play/ep604277?from_spmid=666.5.feed.5
+        cover: https://n.sinaimg.cn/spider20220727/494/w1269h825/20220727/61f6-c868f189cdca6e4e1803c78fa1be738a.png
+      - name: 狐妖小红娘
+        href: https://www.bilibili.com/bangumi/play/ss2543?from_spmid=666.5.feed.ranklist
+        cover: https://pic3.zhimg.com/v2-9f9c83756a5411896a7177f89f681e77_r.jpg
+      - name: 胶囊计划
+        href: https://www.bilibili.com/bangumi/play/ep748347?from_spmid=666.5.feed.5
+        cover: https://ts1.tc.mm.bing.net/th/id/R-C.c830868e88a956d8dd9cec7ea1ae2fdf?rik=Dfh7SSaZAYYwrw&riu=http%3a%2f%2fwww.cnci.net.cn%2fpic%2f2023-12%2f06%2f30631048_b45e4418-309f-4a84-aa38-03ef0625e027.png&ehk=NERRUuMWBo9Etkk%2f98YQhU%2bdQMKzYcaDJwTnW%2fkh%2b0M%3d&risl=&pid=ImgRaw&r=0
+
+  like:
+    like_tips: 关注偏好
+    like_title: 数码科技
+    like_bg: https://bu.dusays.com/2022/12/06/638f5f05ce1f7.jpg
+    like_bottom: 手机、电脑软硬件
+  music:
+    music_tips: 音乐偏好
+    music_title: 周杰伦、民谣、华语流行
+    music_bg: https://ts1.tc.mm.bing.net/th/id/R-C.2408bbb1076a2d41e1c72be89b40486e?rik=mx5uYid5FMWzSw&riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20110%2f759%2fw1485h1674%2f20220706%2f1ab4-4994d24e518eab5eb899a12c3601b1c2.jpg&ehk=Icm1Uav61%2bhbA0oW5ZVgrXY7OUnWnShpMOMc96EgtLI%3d&risl=&pid=ImgRaw&r=0
+    music_link: /music
+  # reward_list:
+  #   - name: 海阔蓝
+  #     amount: 8.8
+  #     datatime: 2023-03-28
+  #   - name: LK66
+  #     amount: 66.6
+  #     datatime: 2023-03-24
+  #   - name: 张时貳
+  #     amount: 6.6
+  #     datatime: 2023-01-22
+  #   - name: ZeroAf
+  #     amount: 9.9
+  #     datatime: 2022-12-14
+  #   - name: LuckyWangXi
+  #     amount: 6.6
+  #     datatime: 2022-12-14
+  #   - name: 刀中日月长
+  #     amount: 10
+  #     datatime: 2022-11-16
+  #   - name: 鹿啵包
+  #     amount: 10
+  #     datatime: 2022-11-08
+  #   - name: 疾速k
+  #     amount: 50
+  #     datatime: 2022-09-20
+  #   - name: 伴舟先生大霖子
+  #     amount: 4.03
+  #     datatime: 2022-10-27
+  #     suffix: 贝壳
+  #   - name: Magica_0x0
+  #     amount: 3.36
+  #     datatime: 2022-10-07
+  #     suffix: 贝壳
+  #   - name: 名字就是要短像这样
+  #     amount: 3.36
+  #     datatime: 2022-08-25
+  #     suffix: 贝壳
+  #   - name: Leviathan520
+  #     amount: 1.34
+  #     datatime: 2022-08-23
+  #     suffix: 贝壳
+  #   - name: 托马斯
+  #     amount: 10
+  #     datatime: 2022-08-19
+  #   - name: 哇是猫猫欸
+  #     amount: 1.34
+  #     datatime: 2022-08-19
+  #     suffix: 贝壳

@@ -1,35 +1,70 @@
-# - name: 花猪
-#   link: https://cnhuazhu.gitee.io/
-#   avatar: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
-#   descr: 佛系青年
-#   siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg # 站点缩略图
-# 在 source/_data/link.yml 中
-- class_name: "我的友链"
-  class_desc: "欢迎交换友链"
-  link_list:
-    - name: 花猪
-      link: https://cnhuazhu.top/butterfly/2021/02/25/Hexo%E9%AD%94%E6%94%B9/Hexo%E4%BF%AE%E6%94%B9%E5%8F%8B%E9%93%BE%E7%95%8C%E9%9D%A2/
-      avatar: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
-      descr: 友链跟他学的
-      siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+
+# 在 butterfly中使用
+# - class_name: "我的友链"
+#   class_desc: "欢迎交换友链"
+#   link_list:
+#     - name: 花猪
+#       link: https://cnhuazhu.top/butterfly/2021/02/25/Hexo%E9%AD%94%E6%94%B9/Hexo%E4%BF%AE%E6%94%B9%E5%8F%8B%E9%93%BE%E7%95%8C%E9%9D%A2/
+#       avatar: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
+#       descr: 友链跟他学的
+#       siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
     
-    # 添加更多友链...
-    - name: "Butterfly主题"
-      link: "https://butterfly.js.org/"
-      avatar: "https://butterfly.js.org/img/butterfly-icon.png"
-      descr: "主题教程"
-      siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+#     # 添加更多友链...
+#     - name: "Butterfly主题"
+#       link: "https://butterfly.js.org/"
+#       avatar: "https://butterfly.js.org/img/butterfly-icon.png"
+#       descr: "主题教程"
+#       siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
 
-    - name: "Jinqq's Home"
-      link: "https://www.jinqiqing.cn/"
-      avatar: "https://butterfly.js.org/img/butterfly-icon.png"
-      descr: "主题教程"
-      siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+#     - name: "Jinqq's Home"
+#       link: "https://www.jinqiqing.cn/"
+#       avatar: "https://butterfly.js.org/img/butterfly-icon.png"
+#       descr: "主题教程"
+#       siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
 
-    - name: "安知鱼"
-      link: "https://blog.anheyu.com/"
-      avatar: "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"
-      descr:  "大佬"
-      siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+#     - name: "安知鱼"
+#       link: "https://blog.anheyu.com/"
+#       avatar: "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"
+#       descr:  "大佬"
+#       siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
 
       
+
+
+#      在安知鱼中使用
+- class_name: 框架
+  flink_style: flexcard
+  hundredSuffix: ""
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网站框架
+    - name: anzhiyu主题
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+
+- class_name: 推荐博客
+  flink_style: telescopic
+  hundredSuffix: ""
+  link_list:
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+      color: vip
+      tag: 技术
+
+- class_name: 小伙伴
+  class_desc: 那些人，那些事
+  flink_style: anzhiyu
+  hundredSuffix: ""
+  link_list:
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      recommend: true

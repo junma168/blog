@@ -1,11 +1,11 @@
-title: Jun's Blog
-subtitle: Code builds world !
+title: 本质微光
+subtitle: 在细微处洞察事物核心或真相 !
 description: 欢迎来到我的世界💜
 keywords: null
-author: Jun
+author: 微光
 language: zh-CN
 timezone: Asia/Shanghai
-url: http://example.com
+url: https://junma.netlify.app/
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
@@ -61,7 +61,7 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: butterfly
+theme: anzhiyu
 search: null
 path: search.xml
 field: post
@@ -74,4 +74,24 @@ deploy:
   type: git
   repo: https://github.com/junma168/blog.git
   branch: master
-  message: 新增文章-资料分析6-11
+  message: 更换为安知鱼主题
+envelope_comment:
+  enable: true
+  custom_pic:
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png
+  message:
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 自动书记人偶竭诚为您服务！
+  height: null
+  path: null
+  front_matter:
+    title: 留言板
+    comments: true
+    top_img: false
+    type: envelope
