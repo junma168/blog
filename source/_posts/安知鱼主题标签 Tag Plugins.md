@@ -2,8 +2,9 @@
 title: 安知鱼主题标签 Tag Plugins
 author: 微光
 tags:
-  - 文档
+  - anzhiyu
 categories:
+  - 教程
   - hexo
 cover: https://s21.ax1x.com/2025/08/05/pVUDsDf.jpg
 date: 2025-08-21 14:58:15
@@ -427,16 +428,17 @@ Any content (support inline tags too).
 2. 增加文字样式：可以在容器内增加 `<b>标题</b>` 和 `<p>描述文字</p>`
 3. 布局方式：
    默认为自动宽度，适合视野内只有一两个的情况。
-   | **参数** | **含义**                         |
-   | -------------- | :------------------------------------- |
-   | wide           | 宽一点的按钮                           |
-   | fill           | 填充布局，自动铺满至少一行，多了会换行 |
-   | center         | 居中，按钮之间是固定间距               |
-   | around         | 居中分散                               |
-   | grid2          | 等宽最多 2 列，屏幕变窄会适当减少列数  |
-   | grid3          | 等宽最多 3 列，屏幕变窄会适当减少列数  |
-   | grid4          | 等宽最多 4 列，屏幕变窄会适当减少列数  |
-   | grid5          | 等宽最多 5 列，屏幕变窄会适当减少列数  |
+
+   | **参数** | **含义**                               |
+   | -------- | :------------------------------------- |
+   | wide     | 宽一点的按钮                           |
+   | fill     | 填充布局，自动铺满至少一行，多了会换行 |
+   | center   | 居中，按钮之间是固定间距               |
+   | around   | 居中分散                               |
+   | grid2    | 等宽最多 2 列，屏幕变窄会适当减少列数  |
+   | grid3    | 等宽最多 3 列，屏幕变窄会适当减少列数  |
+   | grid4    | 等宽最多 4 列，屏幕变窄会适当减少列数  |
+   | grid5    | 等宽最多 5 列，屏幕变窄会适当减少列数  |
 
 <!-- endtab -->
 
@@ -526,8 +528,6 @@ Any content (support inline tags too).
 
 ---
 
-
-
 ## 按钮 btn
 
 {% tabs Unique name, [index] %}
@@ -557,18 +557,17 @@ larger/留空
 
 <!-- tab 配置参数 -->
 
-| 参数     | 含义                                                         |
-| -------- | ------------------------------------------------------------ |
-| url      | 链接                                                         |
-| text     | 按钮文字                                                     |
-| icon     | [可选] 图标，如果开启了 `fontawesome`可以使用 fontawesome 的图标，否则只能使用默内置图标 |
+
+| 参数     | 含义                                                                                                       |
+| -------- | ---------------------------------------------------------------------------------------------------------- |
+| url      | 链接                                                                                                       |
+| text     | 按钮文字                                                                                                   |
+| icon     | [可选] 图标，如果开启了`fontawesome`可以使用 fontawesome 的图标，否则只能使用默内置图标                    |
 | color    | [可选] 按钮背景顔色(默认 style 时）按钮字体和边框顔色(outline 时)default/blue/pink/red/purple/orange/green |
-| style    | [可选] 按钮样式 默认实心数，outline/留空                     |
-| layout   | [可选] 按钮佈局 默认为 line block/留空                       |
-| position | [可选] 按钮位置 前提是设置了 layout 为 block 默认为左边 center/right/留空数 |
-| size     | [可选] 按钮大小 larger/留空                                  |
-
-
+| style    | [可选] 按钮样式 默认实心数，outline/留空                                                                   |
+| layout   | [可选] 按钮佈局 默认为 line block/留空                                                                     |
+| position | [可选] 按钮位置 前提是设置了 layout 为 block 默认为左边 center/right/留空数                                |
+| size     | [可选] 按钮大小 larger/留空                                                                                |
 
 <!-- endtab -->
 
@@ -581,13 +580,11 @@ larger/留空
    This is my website, click the button {% btn 'https://blog.anheyu.com/',AnZhiYu,,outline %}
    This is my website, click the button {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline %}
    This is my website, click the button {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,larger %}
-
 2. 调整位置/大小
 
    {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block %}
    {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block center larger %}
    {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block right outline larger %}
-
 3. more than one button in center
 
    <span>
@@ -599,7 +596,6 @@ larger/留空
    {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,orange larger %}
    {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,green larger %}
    </span>
-
 4. 居中按钮
 
    <div class="btn-center">
@@ -625,7 +621,6 @@ larger/留空
    This is my website, click the button {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,outline %}
    This is my website, click the button {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,larger %}
    ```
-
 2. 调整位置/大小
 
    ```
@@ -633,7 +628,6 @@ larger/留空
    {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block center larger %}
    {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,block right outline larger %}
    ```
-
 3. more than one button in center
 
    ```
@@ -647,7 +641,6 @@ larger/留空
    {% btn 'https://blog.anheyu.com/',AnZhiYu,anzhiyufont anzhiyu-icon-circle-arrow-right,green larger %}
    </span>
    ```
-
 4. 居中按钮
 
    ```
@@ -667,10 +660,6 @@ larger/留空
 {% endtabs %}
 
 ---
-
-
-
-
 
 ## 网站卡片 sites
 
@@ -711,8 +700,6 @@ larger/留空
 
 {% endtabs %}
 
-
-
 ## 单张图片 image
 
 {% tabs Unique name, [index] %}
@@ -738,15 +725,12 @@ larger/留空
 1. 添加描述：
 
    {% image https://s21.ax1x.com/2025/08/20/pVBXpLj.jpg, alt=看什么看，咬死你。 %}
-
 2. 指定宽度：
 
    {% image https://s21.ax1x.com/2025/08/20/pVBXpLj.jpg, width=400px %}
-
 3. 指定宽度并添加描述：
 
    {% image https://s21.ax1x.com/2025/08/20/pVBXpLj.jpg, width=400px, alt=看什么看，咬死你。 %}
-
 4. 设置占位背景色：
 
    {% image https://s21.ax1x.com/2025/08/20/pVBXpLj.jpg, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
@@ -760,19 +744,16 @@ larger/留空
    ```
    {% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, alt=每天下课回宿舍的路，没有什么故事。 %}
    ```
-
 2. 指定宽度：
 
    ```
    {% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px %}
    ```
-
 3. 指定宽度并添加描述：
 
    ```
    {% image https://bu.dusays.com/2023/06/01/6478937d7de6f.webp, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %}
    ```
-
 4. 设置占位背景色：
 
    ```
@@ -785,45 +766,4 @@ larger/留空
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+嘻嘻嘻
