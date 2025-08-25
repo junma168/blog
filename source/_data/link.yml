@@ -33,7 +33,7 @@
 
 #      在安知鱼中使用
 - class_name: 框架
-  flink_style: flexcard
+  flink_style: anzhiyu
   hundredSuffix: ""
   link_list:
     - name: Hexo
@@ -45,6 +45,11 @@
       avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
       descr: 生活明朗，万物可爱
       siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+    - name: "Butterfly主题"
+      link: "https://butterfly.js.org/"
+      avatar: "https://butterfly.js.org/img/butterfly-icon.png"
+      descr: "主题教程"
+      siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
 
 - class_name: 推荐博客
   flink_style: telescopic
@@ -68,3 +73,13 @@
       avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
       descr: 生活明朗，万物可爱
       recommend: true
+    - name: 花猪
+      link: https://cnhuazhu.top/butterfly/2021/02/25/Hexo%E9%AD%94%E6%94%B9/Hexo%E4%BF%AE%E6%94%B9%E5%8F%8B%E9%93%BE%E7%95%8C%E9%9D%A2/
+      avatar: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
+      descr: 
+      siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+    - name: "Jinqq's Home"
+      link: "https://www.jinqiqing.cn/"
+      avatar: "https://butterfly.js.org/img/butterfly-icon.png"
+      descr: "butterfly主题教程"
+      siteshot: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/top.jpg

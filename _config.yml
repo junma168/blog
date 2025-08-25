@@ -74,7 +74,7 @@ deploy:
   type: git
   repo: https://github.com/junma168/blog.git
   branch: master
-  message: 更换为安知鱼主题
+  message: 新增安知鱼主题标签说明文件
 envelope_comment:
   enable: true
   custom_pic:
