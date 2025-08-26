@@ -13,7 +13,7 @@ date: 2025-08-21 14:58:15
 
 ## 段落文本 p
 
-{% tabs Unique name, [index] %}
+{% tabs Unique name, 3 %}
 
 <!-- tab 标签语法 -->
 
@@ -62,7 +62,7 @@ date: 2025-08-21 14:58:15
 
 ## 行内文本 span
 
-{% tabs Unique name, [index] %}
+{% tabs Unique name, 3 %}
 
 <!-- tab 标签语法 -->
 
@@ -111,7 +111,7 @@ date: 2025-08-21 14:58:15
 
 ## 行内文本样式 text
 
-{% tabs Unique name, [index] %}
+{% tabs Unique name, 2%}
 
 <!-- tab 标签语法 -->
 
@@ -156,7 +156,7 @@ date: 2025-08-21 14:58:15
 
 {% note info simple %}分栏支持内置阿里图标，如果开启了 `fontawesome`可以使用 fontawesome 的图标，否则只能使用默内置阿里图标{% endnote %}
 
-{% tabs Unique name, [index] %}
+{% tabs Unique name, 3 %}
 
 <!-- tab 标签语法 -->
 
@@ -409,7 +409,7 @@ Any content (support inline tags too).
 
 ## 按钮 btns
 
-{% tabs Unique name, [index] %}
+{% tabs Unique name, 3 %}
 
 <!-- tab 标签语法 -->
 
@@ -428,6 +428,7 @@ Any content (support inline tags too).
 2. 增加文字样式：可以在容器内增加 `<b>标题</b>` 和 `<p>描述文字</p>`
 3. 布局方式：
    默认为自动宽度，适合视野内只有一两个的情况。
+
 
    | **参数** | **含义**                               |
    | -------- | :------------------------------------- |
@@ -530,7 +531,7 @@ Any content (support inline tags too).
 
 ## 按钮 btn
 
-{% tabs Unique name, [index] %}
+{% tabs Unique name, 3 %}
 
 <!-- tab 标签语法 -->
 
@@ -663,7 +664,7 @@ larger/留空
 
 ## 网站卡片 sites
 
-{% tabs Unique name, [index] %}
+{% tabs Unique name, 2%}
 
 <!-- tab 标签语法 -->
 
@@ -702,7 +703,7 @@ larger/留空
 
 ## 单张图片 image
 
-{% tabs Unique name, [index] %}
+{% tabs Unique name, 3%}
 
 <!-- tab 标签语法 -->
 
@@ -764,6 +765,988 @@ larger/留空
 
 {% endtabs %}
 
+---
+
+## inlineImg 行内图片
+
+{% tabs 行内图片, 3 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% inlineImg [src] [height] %}
+
+[src] : 图片链接
+[height] ： 图片高度限制【可选】
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
 
 
-嘻嘻嘻
+| 参数   | 含义                 |
+| ------ | -------------------- |
+| src    | 图片链接             |
+| height | 图片高度限制【可选】 |
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+你看我长得漂亮不
+
+![](./../../../Imagebackup/pVBXpLj-1756193288502-4.jpg)
+
+我觉得很漂亮 {% inlineImg https://i.loli.net/2021/03/19/5M4jUB3ynq7ePgw.png 150px %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+你看我长得漂亮不
+
+![](https://i.loli.net/2021/03/19/2P6ivUGsdaEXSFI.png)
+
+我觉得很漂亮 {% inlineImg https://i.loli.net/2021/03/19/5M4jUB3ynq7ePgw.png 150px %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## 行内图片 inlineimage
+
+{% tabs 行内图片 inlineimage, 3 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% inlineimage 图片链接, height=高度（可选） %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+1. 高度：height=20px
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+这是 {% inlineimage https://bu.dusays.com/2023/06/01/647895232e5d5.webp %} 一段话。
+
+这又是 {% inlineimage https://bu.dusays.com/2022/05/19/6285328a83ca7.gif, height=40px %} 一段话。
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+这是 {% inlineimage https://bu.dusays.com/2023/06/01/647895232e5d5.webp %} 一段话。
+
+这又是 {% inlineimage https://bu.dusays.com/2022/05/19/6285328a83ca7.gif, height=40px %} 一段话。
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## label 标签
+
+{% tabs label 标签, 3 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% label text color %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+
+| 参数  | 含义                                                                        |
+| ----- | --------------------------------------------------------------------------- |
+| text  | 文字                                                                        |
+| color | 【可选】背景颜色，默认为 default，default/blue/pink/red/purple/orange/green |
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+臣亮言：{% label 先帝 %}创业未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此诚{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈于内；{% label 忠志之士 purple %}，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+宫中、府中，俱为一体；陟罚臧否，不宜异同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+臣亮言：{% label 先帝 %}创业未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此诚{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈于内；{% label 忠志之士 purple %}，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+宫中、府中，俱为一体；陟罚臧否，不宜异同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## timeline
+
+{% tabs timeline, 3 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% timeline title,color %}
+
+<!-- timeline title -->
+
+xxxxx
+
+<!-- endtimeline -->
+<!-- timeline title -->
+
+xxxxx
+
+<!-- endtimeline -->
+
+{% endtimeline %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+
+| 参数  | 含义                                                                       |
+| ----- | -------------------------------------------------------------------------- |
+| title | 标题/时间线                                                                |
+| color | timeline 颜色，default(留空) / blue / pink / red / purple / orange / green |
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+1. 默认颜色
+
+   {% timeline 2022 %}
+
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+2. blue
+
+   {% timeline 2022,blue %}
+
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+3. pink
+
+   {% timeline 2022,pink %}
+
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+4. red
+
+   {% timeline 2022,red %}
+
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+5. purple
+
+   {% timeline 2022,purple %}
+
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+6. orange
+
+   {% timeline 2022,orange %}
+
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+7. green
+
+{% timeline 2022,green %}
+
+<!-- timeline 01-02 -->
+
+这是测试页面
+
+<!-- endtimeline -->
+
+{% endtimeline %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+1. 默认颜色
+
+   ```
+   {% timeline 2022 %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+   ```
+2. blue
+
+   ```
+   {% timeline 2022,blue %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+   ```
+3. pink
+
+   ```
+   {% timeline 2022,pink %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+   ```
+4. red
+
+   ```
+   {% timeline 2022,red %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+   ```
+5. purple
+
+   ```
+   {% timeline 2022,purple %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+   ```
+6. orange
+
+   ```
+   {% timeline 2022,orange %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+   ```
+7. green
+
+   ```
+   {% timeline 2022,green %}
+   <!-- timeline 01-02 -->
+
+   这是测试页面
+   <!-- endtimeline -->
+
+   {% endtimeline %}
+   ```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## flink 友链标签
+
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}可在任何界面插入类似`友情链接`列表效果，内容格式与友情链接界面一样，支持 `yml 格式`,注意`yml数据`具有格式要求，请注意格式对齐，防止被编辑器格式化导致格式错误从而报错。{% endnote %}
+
+{% tabs flink 友链标签, 3 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% flink %}
+xxxxxx
+{% endflink %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+
+| 参数        | 含义                                                |
+| ----------- | --------------------------------------------------- |
+| class_name  | h2标题                                              |
+| flink_style | 【可选】友链样式，默认为 flexcard，flexcard/anzhiyu |
+| link_list   | 【可选】友链样式，默认为 flexcard，flexcard/anzhiyu |
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+{% flink %}
+
+- class_name: 推荐博客
+  flink_style: flexcard
+  link_list:
+
+  - name: 安知鱼
+    link: https://blog.anheyu.com/
+    avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+    descr: 生活明朗，万物可爱
+    siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  flink_style: anzhiyu
+  link_list:
+
+  - name: Youtube
+    link: https://www.youtube.com/
+    avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+    descr: 视频网站
+  - name: Weibo
+    link: https://www.weibo.com/
+    avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+    descr: 中国最大社交分享平台
+  - name: Twitter
+    link: https://twitter.com/
+    avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+    descr: 社交分享平台
+    {% endflink %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+{% flink %}
+- class_name: 推荐博客
+  flink_style: flexcard
+  link_list:
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  flink_style: anzhiyu
+  link_list:
+    - name: Youtube
+      link: https://www.youtube.com/
+      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+      descr: 视频网站
+    - name: Weibo
+      link: https://www.weibo.com/
+      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+      descr: 中国最大社交分享平台
+    - name: Twitter
+      link: https://twitter.com/
+      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+      descr: 社交分享平台
+{% endflink %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## mermaid 图
+
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}使用`mermaid标签`可以绘制Flowchart（流程图）、Sequence diagram（时序图 ）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和Pie Chart（圆形图），具体可以查看[mermaid文档](https://mermaid.js.org/#/){% endnote %}
+
+修改 `主题配置文件`
+
+```
+# mermaid
+# see https://github.com/mermaid-js/mermaid
+mermaid:
+  enable: true
+  # built-in themes: default/forest/dark/neutral
+  theme:
+    light: default
+    dark: dark
+```
+
+{% tabs label mermaid 图, 2 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% mermaid %}
+内容
+{% endmermaid %}
+```
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+{% mermaid %}
+pie
+title Key elements in Product X
+"Calcium" : 42.96
+"Potassium" : 50.05
+"Magnesium" : 10.01
+"Iron" :  5
+{% endmermaid %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+{% mermaid %}
+pie
+    title Key elements in Product X
+    "Calcium" : 42.96
+    "Potassium" : 50.05
+    "Magnesium" : 10.01
+    "Iron" :  5
+{% endmermaid %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## 复选列表 checkbox
+
+{% tabs 复选列表 checkbox, 3 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% checkbox 样式参数（可选）, 文本（支持简单md） %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+1. 样式: plus, minus, times
+2. 颜色: {% span red, red%},{% span yellow, yellow%},{% span green, green%},{% span cyan, cyan%},{% span blue, blue%},{% span gray, gray %}
+3. 选中状态: checked
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+{% checkbox 纯文本测试 %}
+{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red, 支持自定义颜色 %}
+{% checkbox green checked, 绿色 + 默认选中 %}
+{% checkbox yellow checked, 黄色 + 默认选中 %}
+{% checkbox cyan checked, 青色 + 默认选中 %}
+{% checkbox blue checked, 蓝色 + 默认选中 %}
+{% checkbox plus green checked, 增加 %}
+{% checkbox minus yellow checked, 减少 %}
+{% checkbox times red checked, 叉 %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+{% checkbox 纯文本测试 %}
+{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red, 支持自定义颜色 %}
+{% checkbox green checked, 绿色 + 默认选中 %}
+{% checkbox yellow checked, 黄色 + 默认选中 %}
+{% checkbox cyan checked, 青色 + 默认选中 %}
+{% checkbox blue checked, 蓝色 + 默认选中 %}
+{% checkbox plus green checked, 增加 %}
+{% checkbox minus yellow checked, 减少 %}
+{% checkbox times red checked, 叉 %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## dogeplayer 多吉云播放器
+
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}快捷引入[多吉云视频](https://console.dogecloud.com/vod/overview){% endnote %}
+
+{% tabs dogeplayer 多吉云播放器, 3 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% dogeplayer 4945 ebb742fd1f0b5a7b %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+获取`userId`与`vcode`
+
+![pVyW54g.webp](https://s21.ax1x.com/2025/08/26/pVyW54g.webp)
+
+
+| 参数   | 含义         |
+| ------ | ------------ |
+| userId | 多吉云userId |
+| vcode  | 视频vcode    |
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+{% dogeplayer 4945 ebb742fd1f0b5a7b %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+{% dogeplayer 4945 ebb742fd1f0b5a7b %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## 折叠框 folding
+
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}折叠框 folding{% endnote %}
+
+{% tabs 折叠框 folding, 3 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% folding 参数（可选）, 标题 %}
+![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)
+{% endfolding %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+1. 颜色：blue, cyan, green, yellow, red
+2. 状态：状态填写 open 代表默认打开。
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+{% folding 查看图片测试 %}
+
+![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)
+
+{% endfolding %}
+
+{% folding cyan open, 查看默认打开的折叠框 %}
+
+这是一个默认打开的折叠框。
+
+{% endfolding %}
+
+{% folding green, 查看代码测试 %}
+假装这里有代码块（代码块没法嵌套代码块）
+{% endfolding %}
+
+{% folding yellow, 查看列表测试 %}
+
+- haha
+- hehe
+
+{% endfolding %}
+
+{% folding red, 查看嵌套测试 %}
+
+{% folding, 查看嵌套测试2 %}
+
+{% folding 查看嵌套测试3 %}
+
+hahaha <span><img src='./../../../Imagebackup/64788cd5a356b.png' style='height:24px'></span>
+
+{% endfolding %}
+
+{% endfolding %}
+
+{% endfolding %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+```
+{% folding 查看图片测试 %}
+
+![](https://bu.dusays.com/2023/06/01/64788d71c832d.webp)
+
+{% endfolding %}
+
+{% folding cyan open, 查看默认打开的折叠框 %}
+
+这是一个默认打开的折叠框。
+
+{% endfolding %}
+
+{% folding green, 查看代码测试 %}
+假装这里有代码块（代码块没法嵌套代码块）
+{% endfolding %}
+
+{% folding yellow, 查看列表测试 %}
+
+- haha
+- hehe
+
+{% endfolding %}
+
+{% folding red, 查看嵌套测试 %}
+
+{% folding, 查看嵌套测试2 %}
+
+{% folding 查看嵌套测试3 %}
+
+hahaha <span><img src='https://bu.dusays.com/2023/06/01/64788cd5a356b.png' style='height:24px'></span>
+
+{% endfolding %}
+
+{% endfolding %}
+
+{% endfolding %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## Gallery 相册图库
+
+一个图库集合。
+
+{% tabs Gallery 相册图库, 3 %}
+
+<!-- tab 标签语法 -->
+
+1. gallerygroup 相册图库
+
+   ```
+   <div class="gallery-group-main">
+   {% galleryGroup name description link img-url %}
+   {% galleryGroup name description link img-url %}
+   {% galleryGroup name description link img-url %}
+   </div>
+   ```
+2. gallery 相册
+
+   {% tabs gallery 相册, 1 %}
+
+   <!-- tab 本地 -->
+
+   ```
+   {% gallery %}
+   markdown 图片格式
+   {% endgallery %}
+
+   {% gallery true,220,10 %}
+   markdown 图片格式
+   {% endgallery %}
+
+   {% gallery true,,10 %}
+   markdown 图片格式
+   {% endgallery %}
+   ```
+
+
+   | 参数名    | 释义                                                                                |
+   | --------- | ----------------------------------------------------------------------------------- |
+   | lazyload  | 【可选】点击按钮加载更多图片，填写 true/false。默认为`false`。                      |
+   | rowHeight | 【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为`220`。 |
+   | limit     | 【可选】每次加载多少张照片。默认为`10`。                                            |
+
+
+   <!-- endtab -->
+
+   <!-- tab 远程 -->
+
+   ```
+   {% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+   {% endgallery %}
+   ```
+
+
+   | 参数名    | 释义                                                                                |
+   | --------- | ----------------------------------------------------------------------------------- |
+   | url       | 【必须】 识别词                                                                     |
+   | link      | 【必须】远程的 json 链接                                                            |
+   | lazyload  | 【可选】点击按钮加载更多图片，填写 true/false。默认为`false`。                      |
+   | rowHeight | 【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为`220`。 |
+   | limit     | 【可选】每次加载多少张照片。默认为`10`。                                            |
+
+   远程链接 Json 的例子
+
+   有三个参数，`url`是必须存在的，`alt` 和 `title` 可有，也可没有
+
+   ```
+   [
+     {
+       "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0556.jpg",
+       "alt": "IMG_0556.jpg",
+       "title": "这是title"
+     },
+     {
+       "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0472.jpg",
+       "alt": "IMG_0472.jpg"
+     },
+     {
+       "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0453.jpg",
+       "alt": ""
+     },
+     {
+       "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0931.jpg",
+       "alt": ""
+     }
+   ]
+   ```
+
+   示例
+
+   ```
+   {% gallery url,https://xxxx.com/sss.json %}
+   {% endgallery %}
+
+   {% gallery url,https://xxxx.com/sss.json,true,220,10 %}
+   {% endgallery %}
+
+   {% gallery url,https://xxxx.com/sss.json,true,,10 %}
+   {% endgallery %}
+   ```
+
+   <!-- endtab -->
+
+   {% endtabs %}
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+- gallerygroup 相册图库
+
+
+| 参数名      | 释义                 |
+| ----------- | -------------------- |
+| name        | 图库名字             |
+| description | 图库描述             |
+| link        | 链接到对应相册的地址 |
+| img-url     | 图库封面             |
+
+```
+{% note info simple %}思维拓展一下，相册图库的实质其实就是个快捷方式，可以自定义添加描述、封面、链接。那么我们未必要把它当做一个相册，完全可以作为一个链接卡片，链接到视频、QQ、友链都是不错的选择。{% endnote %}
+```
+
+- gallery 相册
+
+区别于旧版的 Gallery 相册,新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。无需再自己配置长宽。**建议在粘贴时故意使用长短、大小、横竖不一的图片**，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）
+
+{% tabs gallery 相册, 1 %}
+
+<!-- tab 本地 -->
+
+```
+{% gallery %}
+markdown 图片格式
+{% endgallery %}
+
+{% gallery true,220,10 %}
+markdown 图片格式
+{% endgallery %}
+
+{% gallery true,,10 %}
+markdown 图片格式
+{% endgallery %}
+```
+
+
+| 参数名    | 释义                                                                                |
+| --------- | ----------------------------------------------------------------------------------- |
+| lazyload  | 【可选】点击按钮加载更多图片，填写 true/false。默认为`false`。                      |
+| rowHeight | 【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为`220`。 |
+| limit     | 【可选】每次加载多少张照片。默认为`10`。                                            |
+
+<!-- endtab -->
+
+<!-- tab 远程 -->
+
+```
+{% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+{% endgallery %}
+```
+
+
+| 参数名    | 释义                                                                                |
+| --------- | ----------------------------------------------------------------------------------- |
+| url       | 【必须】 识别词                                                                     |
+| link      | 【必须】远程的 json 链接                                                            |
+| lazyload  | 【可选】点击按钮加载更多图片，填写 true/false。默认为`false`。                      |
+| rowHeight | 【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为`220`。 |
+| limit     | 【可选】每次加载多少张照片。默认为`10`。                                            |
+
+远程链接 Json 的例子
+
+有三个参数，`url`是必须存在的，`alt` 和 `title` 可有，也可没有。
+
+```
+[
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0556.jpg",
+    "alt": "IMG_0556.jpg",
+    "title": "这是title"
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0472.jpg",
+    "alt": "IMG_0472.jpg"
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0453.jpg",
+    "alt": ""
+  },
+  {
+    "url": "https://cdn1.tianli0.top/gh/jerryc127/CDN/img/IMG_0931.jpg",
+    "alt": ""
+  }
+]
+```
+
+示例
+
+```
+{% gallery url,https://xxxx.com/sss.json %}
+{% endgallery %}
+
+{% gallery url,https://xxxx.com/sss.json,true,220,10 %}
+{% endgallery %}
+
+{% gallery url,https://xxxx.com/sss.json,true,,10 %}
+{% endgallery %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+1. gallerygroup 相册图库
+
+   <div class="gallery-group-main">
+    {% galleryGroup MC 在Rikkaの六花服务器里留下的足迹 '/wordScenery/' https://bu.dusays.com/2023/06/01/64788f24d05bd.webp %}
+    {% galleryGroup Gundam 哦咧哇gundam哒！ '/thousand/' https://bu.dusays.com/2023/06/01/64788f456fc3d.webp %}
+    {% galleryGroup I-am-Akilar 某种意义上也算自拍吧 '/wallpaper/' https://bu.dusays.com/2023/06/01/64788f83e5fa1.webp %}
+   </div>
+2. gallery 相册
+
+   {% gallery true,,2 %}
+   ![](https://bu.dusays.com/2023/06/01/647896b15759c.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647896cabde59.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647890012b1ec.webp)
+   ![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)
+   ![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)
+   ![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
+   ![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
+   {% endgallery %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码 -->
+
+{% note info simple %}对于很多同学提问的gallerygroup和gallery相册页的链接问题。这里说下我个人的使用习惯。一般使用相册图库的话，可以在导航栏加一个 gallery 的 page(**使用指令`hexo new page gallery`添加**)，里面放相册图库作为封面。然后在`[Blogroot]/source/gallery/`下面建立相应的文件夹，例如若按照这里的示例，若欲使用`/gallery/MC/`路径访问 MC 相册，则需要新建`[Blogroot]/source/gallery/MC/index.md`，并在里面填入`gallery`相册内容。注意 ⚠️：本站相册集为单独优化，可参考[配置相册页面](https://blog.anheyu.com/posts/220c.html)。{% endnote %}
+
+1. gallerygroup 相册图库
+
+   ```
+   <div class="gallery-group-main">
+    {% galleryGroup MC 在Rikkaの六花服务器里留下的足迹 '/wordScenery/' https://bu.dusays.com/2023/06/01/64788f24d05bd.webp %}
+    {% galleryGroup Gundam 哦咧哇gundam哒！ '/thousand/' https://bu.dusays.com/2023/06/01/64788f456fc3d.webp %}
+    {% galleryGroup I-am-Akilar 某种意义上也算自拍吧 '/wallpaper/' https://bu.dusays.com/2023/06/01/64788f83e5fa1.webp %}
+   </div>
+   ```
+2. gallery 相册
+
+   ```
+   {% gallery true,,2 %}
+   ![](https://bu.dusays.com/2023/06/01/647896b15759c.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647896cabde59.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg)
+   ![](https://bu.dusays.com/2023/06/01/647890012b1ec.webp)
+   ![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)
+   ![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)
+   ![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
+   ![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
+   {% endgallery %}
+   ```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+![](https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvYy9mNzAwYmM1NGU3YTk2MWQ1L0VlV2I2bTBuck50T29KdzZBWmx4UExzQk82M0tfS2ZRRVBQOXdLbWdjVTJfTEE_ZT1iM1RURlQ.jpg)
