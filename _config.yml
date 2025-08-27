@@ -74,7 +74,7 @@ deploy:
   type: git
   repo: https://github.com/junma168/blog.git
   branch: master
-  message: 新增个人歌单配置方法
+  message: 增加歌曲
 envelope_comment:
   enable: true
   custom_pic:

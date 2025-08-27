@@ -128,9 +128,9 @@
    {
     "name": "挪威的森林",
     "artist": "伍佰",
-    "url": "https://lv-sycdn.kuwo.cn/ff01520d227fe683dc72d29f04c0fa19/68abe5fd/resource/30106/trackmedia/M5000031QUE91Lllm2.mp3?bitrate$128&from=vip",
+    "url": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VlaHJhU2tVX0NKUGxlTEVuUFFMQ0ZrQl84ek13SmNkNHZya19fYWx0OGNqQmc_ZT0zMGRKRHk.mp3",
     "cover": "https://y.qq.com/music/photo_new/T002R300x300M000000f01724fd7TH_1.jpg?max_age=2592000",
-    "lrc": "https://npm.elemecdn.com/anzhiyu-music@1.0.4/龙卷风/龙卷风.lrc"
+    "lrc": "https://api.codetabs.com/v1/proxy?quest=https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VieV9mdlR1cVpaR3FSWDNtTDQ1SFRFQjlxZHFPNW5CV2xLbFJxTDZEd0ZQZmc_ZT1yc1dUQVY.lrc"
   },
   {
     "name": "鲜花",
@@ -138,5 +138,33 @@
     "url": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VmcFh6Q3cwazRaRnNDUkVrVHQ2YWdRQllUdHd4TkdENU5NZ2VYcWZoRndyRmc_ZT1QOElRM1Y.mp3",
     "cover": "http://p1.music.126.net/fKJMTONzRMaeVthOmEvd9A==/109951168948248373.jpg?param=300x300",
     "lrc": "https://api.codetabs.com/v1/proxy?quest=http://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VjZ1RKOFF4RXZsTWl2a1VGaWUwM1hZQlhJU1dtS08zeFh3dU55TVFYQ016U1E_ZT1WQlVZeE4.lrc"
+  },
+  {
+    "name": "泪桥",
+    "artist": "伍佰 & China Blue",
+    "url": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0ViY1pKbmYtSUdwTnRaaGRzeUloS3BNQmtkcE05YUlwZ3VwUW5IbFZzWkhqaWc_ZT1zNm51TjQ.mp3",
+    "cover": "http://p1.music.126.net/fQOh1ut3heT69l8IQF6ZBg==/109951164811428161.jpg?param=300x300",
+    "lrc": "https://api.codetabs.com/v1/proxy?quest=https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VhM3o0elJBMnpWS3VHdGpvTjA5R2RnQlZQbExlcmxQS1MzRkxLaWhnQnNJQ0E_ZT0xRXVLVXM.lrc"
+  },
+    {
+    "name": "光辉岁月",
+    "artist": "Beyond",
+    "url": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VTZ1c3dHNXUXdkSG05MTdsVXI1X0pvQkdaNWd5SkRHelJLTTUzSXdTcV9kM2c_ZT1hY09WUlY.mp3",
+    "cover": "http://p1.music.126.net/JOJvZc_7SqQjKf8TktQ_bw==/29686813951246.jpg?param=300x300",
+    "lrc": "https://api.codetabs.com/v1/proxy?quest=https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VSRk1oNEFRX2FwRW5wdWJaenZqM21nQnZaRzJvcVY2RXhQX1BINFVFZXB2emc_ZT13Z0ZHVmI.lrc"
+  },
+  {
+    "name": "可不可以",
+    "artist": "张紫豪",
+    "url": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VaU3FjQnJNdFE1RHR2UnZrWmtiZFBjQm9GTDFHc1hTQjlmbl83RUtkazFFNGc_ZT1DTlpiYVk.mp3",
+    "cover": "http://p1.music.126.net/WafK2OQfEtqXitdDXJ772Q==/109951163252847249.jpg?param=300x300",
+    "lrc": "https://api.codetabs.com/v1/proxy?quest=https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VRcHVJYkZ5Qmx0RGlQZ2x2Y251X2ZnQlpGRXRHX2dkWUwzZHRNUjROS0J3S1E_ZT1vT3lXOFI.lrc"
+  },
+  {
+    "name": "老人と海",
+    "artist": "ヨルシカ",
+    "url": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VZMVd1UXJUV2JoRnBJV0dtMy03eGFRQk12YUF3WFJPOWhRYkxPVkxkN3pxSlE_ZT1SMXQza3Q.mp3",
+    "cover": "http://p2.music.126.net/5aHcGADR5i6biE5TSqf_aQ==/109951166295171725.jpg?param=300x300",
+    "lrc": "https://api.codetabs.com/v1/proxy?quest=https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9mNzAwYmM1NGU3YTk2MWQ1L0VTU0hkQ2RnejBCTm5Qc0Z2eDJ6V25FQm81VlVVMUVjQUlETDBBakdxYUdpcUE_ZT1kdXVHR0g.lrc"
   }
 ]
