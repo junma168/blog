@@ -74,7 +74,7 @@ deploy:
   type: git
   repo: https://github.com/junma168/blog.git
   branch: master
-  message: 新增音乐殿堂页面
+  message: 配置文件更新
 envelope_comment:
   enable: true
   custom_pic:

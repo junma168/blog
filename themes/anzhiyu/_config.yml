@@ -14,7 +14,8 @@ menu:
     # 追番页: /bangumis/ || anzhiyu-icon-bilibili
     相册集: /album/ || anzhiyu-icon-images
     # 小空调: /air-conditioner/ || anzhiyu-icon-fan
-
+    音乐殿堂: /movies/ || anzhiyu-icon-fan
+    
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
     # 闲言碎语: /essay/ || anzhiyu-icon-lightbulb
@@ -744,14 +745,14 @@ beautify:
 font:
   global-font-size: 16px
   code-font-size:
-  font-family:
+  font-family: DingTalk-JinBuTi
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
 blog_title_font:
   font_link:
-  font-family: PingFang SC, 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font-family: DingTalk-JinBuTi, PingFang SC, 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
@@ -1244,6 +1245,7 @@ inject:
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
+    - <link rel="stylesheet" href="/custom/css/font.css">
 
 # CDN
 # Don't modify the following settings unless you know how they work
