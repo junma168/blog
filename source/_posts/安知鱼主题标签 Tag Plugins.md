@@ -6,10 +6,10 @@ tags:
 categories:
   - 教程
   - hexo
-cover: https://s21.ax1x.com/2025/08/05/pVUDsDf.jpg
+cover: https://lz.qaiu.top/parser?url=https://cloud.189.cn/web/share?code=JFv6VraaeMr2（访问码：9grc）
 date: 2025-08-21 14:58:15
 ---
-[安知鱼主题标签 Tag Plugins | 安知鱼](https://blog.anheyu.com/posts/d50a.html)
+
 
 ## 段落文本 p
 
@@ -1024,10 +1024,10 @@ xxxxx
    ```
    {% timeline 2022 %}
    <!-- timeline 01-02 -->
-
+   
    这是测试页面
    <!-- endtimeline -->
-
+   
    {% endtimeline %}
    ```
 2. blue
@@ -1035,10 +1035,10 @@ xxxxx
    ```
    {% timeline 2022,blue %}
    <!-- timeline 01-02 -->
-
+   
    这是测试页面
    <!-- endtimeline -->
-
+   
    {% endtimeline %}
    ```
 3. pink
@@ -1046,10 +1046,10 @@ xxxxx
    ```
    {% timeline 2022,pink %}
    <!-- timeline 01-02 -->
-
+   
    这是测试页面
    <!-- endtimeline -->
-
+   
    {% endtimeline %}
    ```
 4. red
@@ -1057,10 +1057,10 @@ xxxxx
    ```
    {% timeline 2022,red %}
    <!-- timeline 01-02 -->
-
+   
    这是测试页面
    <!-- endtimeline -->
-
+   
    {% endtimeline %}
    ```
 5. purple
@@ -1068,10 +1068,10 @@ xxxxx
    ```
    {% timeline 2022,purple %}
    <!-- timeline 01-02 -->
-
+   
    这是测试页面
    <!-- endtimeline -->
-
+   
    {% endtimeline %}
    ```
 6. orange
@@ -1079,10 +1079,10 @@ xxxxx
    ```
    {% timeline 2022,orange %}
    <!-- timeline 01-02 -->
-
+   
    这是测试页面
    <!-- endtimeline -->
-
+   
    {% endtimeline %}
    ```
 7. green
@@ -1090,10 +1090,10 @@ xxxxx
    ```
    {% timeline 2022,green %}
    <!-- timeline 01-02 -->
-
+   
    这是测试页面
    <!-- endtimeline -->
-
+   
    {% endtimeline %}
    ```
 
@@ -1503,11 +1503,11 @@ hahaha <span><img src='https://bu.dusays.com/2023/06/01/64788cd5a356b.png' style
    {% gallery %}
    markdown 图片格式
    {% endgallery %}
-
+   
    {% gallery true,220,10 %}
    markdown 图片格式
    {% endgallery %}
-
+   
    {% gallery true,,10 %}
    markdown 图片格式
    {% endgallery %}
@@ -1748,5 +1748,826 @@ markdown 图片格式
 
 {% endtabs %}
 
+---
 
-![](https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvYy9mNzAwYmM1NGU3YTk2MWQ1L0VlV2I2bTBuck50T29KdzZBWmx4UExzQk82M0tfS2ZRRVBQOXdLbWdjVTJfTEE_ZT1iM1RURlQ.jpg)
+## tag-hide
+
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}如果你想把一些文字、内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。
+请注意，tag-hide内的标签外挂content内都不建议有h1 - h6 等标题。因为Toc会把隐藏内容标题也显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致Toc的滚动出现异常。{% endnote %}
+
+{% tabs label mermaid 图, 2 %}
+
+<!-- tab inline -->
+
+`inline` 在文本里面添加按钮隐藏内容，只限文字
+
+( content不能包含英文逗号，可用`&sbquo;`)
+
+```
+{% hideInline content,display,bg,color %}
+```
+
+- content: 文本内容
+- display: 按钮显示的文字(可选)
+- bg: 按钮的背景颜色(可选)
+- color: 按钮文字的颜色(可选)
+
+{% note modern %}Demo{% endnote %}
+
+```
+哪个英文字母最酷？ {% hideInline 因为西装裤(C装酷),查看答案,#FF7242,#fff %}
+
+门里站着一个人? {% hideInline 闪 %}
+```
+
+哪个英文字母最酷？ {% hideInline 因为西装裤(C装酷),查看答案,#FF7242,#fff %}
+
+门里站着一个人? {% hideInline 闪 %}
+
+
+
+<!-- endtab -->
+
+<!-- tab block -->
+
+`block`独立的block隐藏内容，可以隐藏很多内容，包括图片，代码块等等
+
+( display 不能包含英文逗号，可用`&sbquo;`)
+
+```
+{% hideBlock display,bg,color %}
+content
+{% endhideBlock %}
+```
+
+- content: 文本内容
+- display: 按钮显示的文字(可选)
+- bg: 按钮的背景颜色(可选)
+- color: 按钮文字的颜色(可选)
+
+{% note simple %}Demo{% endnote %}
+
+```
+查看答案
+{% hideBlock 查看答案 %}
+傻子，怎么可能有答案
+{% endhideBlock %}
+```
+
+查看答案
+{% hideBlock 查看答案 %}
+傻子，怎么可能有答案
+{% endhideBlock %}
+
+
+
+
+
+<!-- endtab -->
+
+<!-- tab Toggle -->
+
+如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。
+
+( display 不能包含英文逗号，可用`&sbquo;`)
+
+```
+{% hideToggle display,bg,color %}
+content
+{% endhideToggle %}
+```
+
+{% note modern %}Demo{% endnote %}
+
+{% hideToggle AnZhiYu主题安装方法,bg,color %}在你的博客根目录里
+
+git clone -b master https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu
+
+如果想要安装比较新的dev分支，可以
+
+git clone -b dev https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu{% endhideToggle %}
+
+
+
+<!-- endtab -->
+
+{% endtabs %}
+
+---
+
+## 链接卡片 link
+
+
+
+{% tabs 链接卡片 link, 2 %}
+
+<!-- tab 标签语法-->
+
+```
+{% link 标题, 站点描述, 链接, 图片链接（可选） %}
+```
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+{% link 获取网站的Favicon图标并显示在你的网页上,owen0o0,https://github.com/owen0o0/getFavicon %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码-->
+
+```
+{% link 获取网站的Favicon图标并显示在你的网页上,owen0o0,https://github.com/owen0o0/getFavicon %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+
+---
+
+## 单选列表 radio
+
+{% tabs 链接卡片 link, 2 %}
+
+<!-- tab 标签语法-->
+
+```
+{% radio 样式参数（可选）, 文本（支持简单md） %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+1. 颜色: {% span red, red%}、{% span yellow, yellow%}、{% span green, green%}、{% span cyan, cyan %}、{% span blue, blue %}、{% span gray, gray %}
+2. 选中状态: checked
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+{% radio 纯文本测试 %}
+{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% radio red, 支持自定义颜色 %}
+{% radio green, 绿色 %}
+{% radio yellow, 黄色 %}
+{% radio cyan, 青色 %}
+{% radio blue, 蓝色 %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码-->
+
+```
+{% radio 纯文本测试 %}
+{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% radio red, 支持自定义颜色 %}
+{% radio green, 绿色 %}
+{% radio yellow, 黄色 %}
+{% radio cyan, 青色 %}
+{% radio blue, 蓝色 %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+
+---
+
+## 上标标签 tip
+
+{% tip cogs %}主要样式参考自[小康的 butterfly 渐变背景标签](https://www.antmoe.com/posts/3b43914f/){% endtip %}
+
+{% tabs 上标标签 tip, 2 %}
+
+<!-- tab 标签语法-->
+
+```
+{% tip [参数，可选] %}文本内容{% endtip %}
+```
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+1. 样式: success,error,warning,bolt,ban,home,sync,cogs,key,bell
+2. 自定义图标: 支持 fontawesome。
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+{% tip %}default{% endtip %}
+{% tip info %}info{% endtip %}
+{% tip success %}success{% endtip %}
+{% tip error %}error{% endtip %}
+{% tip warning %}warning{% endtip %}
+{% tip bolt %}bolt{% endtip %}
+{% tip ban %}ban{% endtip %}
+{% tip home %}home{% endtip %}
+{% tip sync %}sync{% endtip %}
+{% tip cogs %}cogs{% endtip %}
+{% tip key %}key{% endtip %}
+{% tip bell %}bell{% endtip %}
+{% tip fa-atom %}自定义 font awesome 图标{% endtip %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码-->
+
+```
+{% tip %}default{% endtip %}
+{% tip info %}info{% endtip %}
+{% tip success %}success{% endtip %}
+{% tip error %}error{% endtip %}
+{% tip warning %}warning{% endtip %}
+{% tip bolt %}bolt{% endtip %}
+{% tip ban %}ban{% endtip %}
+{% tip home %}home{% endtip %}
+{% tip sync %}sync{% endtip %}
+{% tip cogs %}cogs{% endtip %}
+{% tip key %}key{% endtip %}
+{% tip bell %}bell{% endtip %}
+{% tip fa-atom %}自定义 font awesome 图标{% endtip %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+
+---
+
+## Note (Bootstrap Callout)
+
+
+
+{% tabs Note, 4 %}
+
+<!-- tab 通用配置-->
+
+修改主题配置文件
+
+```
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: simple
+  icons: false
+  border_radius: 3
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
+```
+
+`Note`标签外挂有两种用法。`icons`和`light_bg_offset`只对方法一生效。
+
+fontawesome`图标需开启主题配置文件中`icons.fontawesome
+
+<!-- endtab -->
+
+<!-- tab 语法格式-->
+
+`方法一`
+
+```
+{% note [class] [no-icon] [style] %}
+Any content (support inline tags too.io).
+{% endnote %}
+```
+
+`方法二`
+
+```
+{% note [color] [icon] [style] %}
+Any content (support inline tags too.io).
+{% endnote %}
+```
+
+
+
+<!-- endtab -->
+
+<!-- tab 配置参数 -->
+
+`方法一`
+
+| 参数    | 用法                                                         |
+| ------- | ------------------------------------------------------------ |
+| class   | 【可选】标识，不同的标识有不同的配色 （ default / primary / success / info / warning / danger ） |
+| no-icon | 【可选】不显示 icon                                          |
+| style   | 【可选】可以覆盖配置中的 style （simple/modern/flat/disabled） |
+
+`方法二`
+
+| 参数    | 用法                                                         |
+| ------- | ------------------------------------------------------------ |
+| class   | 【可选】标识，不同的标识有不同的配色 （ default / blue / pink / red / purple / orange / green ） |
+| no-icon | 【可选】可配置自定义 icon (支持 fontawesome 图标和主题内置的阿里图标,`fontawesome`图标需开启主题配置文件中`icons.fontawesome`, 也可以配置 no-icon ) |
+| style   | 【可选】可以覆盖配置中的 style （simple/modern/flat/disabled） |
+
+
+
+<!-- endtab -->
+
+<!-- tab 样式预览 -->
+
+`方法一`
+
+1. `simple`样式
+
+   {% note simple %}默认 提示块标签{% endnote %}
+   {% note default simple %}default 提示块标签{% endnote %}
+   {% note primary simple %}primary 提示块标签{% endnote %}
+   {% note success simple %}success 提示块标签{% endnote %}
+   {% note info simple %}info 提示块标签{% endnote %}
+   {% note warning simple %}warning 提示块标签{% endnote %}
+   {% note danger simple %}danger 提示块标签{% endnote %}
+
+2. `modern`样式
+
+   {% note modern %}默认 提示块标签{% endnote %}
+   {% note default modern %}default 提示块标签{% endnote %}
+   {% note primary modern %}primary 提示块标签{% endnote %}
+   {% note success modern %}success 提示块标签{% endnote %}
+   {% note info modern %}info 提示块标签{% endnote %}
+   {% note warning modern %}warning 提示块标签{% endnote %}
+   {% note danger modern %}danger 提示块标签{% endnote %}
+
+3. `flat`样式
+
+   {% note flat %}默认 提示块标签{% endnote %}
+   {% note default flat %}default 提示块标签{% endnote %}
+   {% note primary flat %}primary 提示块标签{% endnote %}
+   {% note success flat %}success 提示块标签{% endnote %}
+   {% note info flat %}info 提示块标签{% endnote %}
+   {% note warning flat %}warning 提示块标签{% endnote %}
+   {% note danger flat %}danger 提示块标签{% endnote %}
+
+4. `disabled`样式
+
+   {% note disabled %}默认 提示块标签{% endnote %}
+   {% note default disabled %}default 提示块标签{% endnote %}
+   {% note primary disabled %}primary 提示块标签{% endnote %}
+   {% note success disabled %}success 提示块标签{% endnote %}
+   {% note info disabled %}info 提示块标签{% endnote %}
+   {% note warning disabled %}warning 提示块标签{% endnote %}
+   {% note danger disabled %}danger 提示块标签{% endnote %}
+
+5. `no-icon`样式
+
+   {% note no-icon %}默认 提示块标签{% endnote %}
+   {% note default no-icon %}default 提示块标签{% endnote %}
+   {% note primary no-icon %}primary 提示块标签{% endnote %}
+   {% note success no-icon %}success 提示块标签{% endnote %}
+   {% note info no-icon %}info 提示块标签{% endnote %}
+   {% note warning no-icon %}warning 提示块标签{% endnote %}
+   {% note danger no-icon %}danger 提示块标签{% endnote %}
+
+`方法二`
+
+图标支持 `fontawesome` 和 `主题内置的阿里图标`，使用方法为加上对应的类名，`fontawesome`图标需开启主题配置文件中`icons.fontawesome`，默认未开启 fontawesome
+
+1. simple 样式
+
+   `主题内置阿里图标`
+
+   {% note 'anzhiyufont anzhiyu-icon-rocket' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}2022 年快到了....{% endnote %}
+   {% note pink 'anzhiyufont anzhiyu-icon-instagram' simple %}小心开车 安全至上{% endnote %}
+   {% note red 'anzhiyufont anzhiyu-icon-fan' simple%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'anzhiyufont anzhiyu-icon-dengpao' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' simple %}剪刀石头布{% endnote %}
+   {% note green 'anzhiyufont anzhiyu-icon-ic_train' simple %}前端最讨厌的浏览器{% endnote %}
+
+   `fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+   {% note 'fab fa-cc-visa' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'fas fa-bullhorn' simple %}2022 年快到了....{% endnote %}
+   {% note pink 'fas fa-car-crash' simple %}小心开车 安全至上{% endnote %}
+   {% note red 'icon-fan' simple%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'fas fa-battery-half' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'far fa-hand-scissors' simple %}剪刀石头布{% endnote %}
+   {% note green 'fab fa-internet-explorer' simple %}前端最讨厌的浏览器{% endnote %}
+
+2. modern 样式
+
+   `主题内置阿里图标`
+
+   {% note 'anzhiyufont anzhiyu-icon-rocket' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' modern %}2022 年快到了....{% endnote %}
+   {% note pink 'anzhiyufont anzhiyu-icon-instagram' modern %}小心开车 安全至上{% endnote %}
+   {% note red 'anzhiyufont anzhiyu-icon-fan' modern%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'anzhiyufont anzhiyu-icon-dengpao' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' modern %}剪刀石头布{% endnote %}
+   {% note green 'anzhiyufont anzhiyu-icon-ic_train' modern %}前端最讨厌的浏览器{% endnote %}
+
+   `fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+   {% note 'fab fa-cc-visa' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'fas fa-bullhorn' modern %}2021 年快到了....{% endnote %}
+   {% note pink 'fas fa-car-crash' modern %}小心开车 安全至上{% endnote %}
+   {% note red 'icon-fan' modern%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'fas fa-battery-half' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'far fa-hand-scissors' modern %}剪刀石头布{% endnote %}
+   {% note green 'fab fa-internet-explorer' modern %}前端最讨厌的浏览器{% endnote %}
+
+3. flat 样式
+
+   `主题内置阿里图标`
+
+   {% note 'anzhiyufont anzhiyu-icon-rocket' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' flat %}2022 年快到了....{% endnote %}
+   {% note pink 'anzhiyufont anzhiyu-icon-instagram' flat %}小心开车 安全至上{% endnote %}
+   {% note red 'anzhiyufont anzhiyu-icon-fan' flat%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'anzhiyufont anzhiyu-icon-dengpao' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' flat %}剪刀石头布{% endnote %}
+   {% note green 'anzhiyufont anzhiyu-icon-ic_train' flat %}前端最讨厌的浏览器{% endnote %}
+
+   `fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+   {% note 'fab fa-cc-visa' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'fas fa-bullhorn' flat %}2021 年快到了....{% endnote %}
+   {% note pink 'fas fa-car-crash' flat %}小心开车 安全至上{% endnote %}
+   {% note red 'icon-fan' flat%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'fas fa-battery-half' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'far fa-hand-scissors' flat %}剪刀石头布{% endnote %}
+   {% note green 'fab fa-internet-explorer' flat %}前端最讨厌的浏览器{% endnote %}
+
+4. disabled 样式
+
+   `主题内置阿里图标`
+
+   {% note 'anzhiyufont anzhiyu-icon-rocket' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' disabled %}2022 年快到了....{% endnote %}
+   {% note pink 'anzhiyufont anzhiyu-icon-instagram' disabled %}小心开车 安全至上{% endnote %}
+   {% note red 'anzhiyufont anzhiyu-icon-fan' disabled%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'anzhiyufont anzhiyu-icon-dengpao' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' disabled %}剪刀石头布{% endnote %}
+   {% note green 'anzhiyufont anzhiyu-icon-ic_train' disabled %}前端最讨厌的浏览器{% endnote %}
+
+   `fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+   {% note 'fab fa-cc-visa' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'fas fa-bullhorn' disabled %}2021 年快到了....{% endnote %}
+   {% note pink 'fas fa-car-crash' disabled %}小心开车 安全至上{% endnote %}
+   {% note red 'icon-fan' disabled %}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'fas fa-battery-half' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'far fa-hand-scissors' disabled %}剪刀石头布{% endnote %}
+   {% note green 'fab fa-internet-explorer' disabled %}前端最讨厌的浏览器{% endnote %}
+
+5. no-icon 样式
+
+   {% note no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue no-icon %}2021 年快到了....{% endnote %}
+   {% note pink no-icon %}小心开车 安全至上{% endnote %}
+   {% note red no-icon %}这是三片呢？还是四片？{% endnote %}
+   {% note orange no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple no-icon %}剪刀石头布{% endnote %}
+   {% note green no-icon %}前端最讨厌的浏览器{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab 示例源码-->
+
+`方法一`
+
+1. `simple`样式
+
+   ```
+   {% note simple %}默认 提示块标签{% endnote %}
+   {% note default simple %}default 提示块标签{% endnote %}
+   {% note primary simple %}primary 提示块标签{% endnote %}
+   {% note success simple %}success 提示块标签{% endnote %}
+   {% note info simple %}info 提示块标签{% endnote %}
+   {% note warning simple %}warning 提示块标签{% endnote %}
+   {% note danger simple %}danger 提示块标签{% endnote %}
+   ```
+
+2. `modern`样式
+
+   ```
+   {% note modern %}默认 提示块标签{% endnote %}
+   {% note default modern %}default 提示块标签{% endnote %}
+   {% note primary modern %}primary 提示块标签{% endnote %}
+   {% note success modern %}success 提示块标签{% endnote %}
+   {% note info modern %}info 提示块标签{% endnote %}
+   {% note warning modern %}warning 提示块标签{% endnote %}
+   {% note danger modern %}danger 提示块标签{% endnote %}
+   ```
+
+3. `flat`样式
+
+   ```
+   {% note flat %}默认 提示块标签{% endnote %}
+   {% note default flat %}default 提示块标签{% endnote %}
+   {% note primary flat %}primary 提示块标签{% endnote %}
+   {% note success flat %}success 提示块标签{% endnote %}
+   {% note info flat %}info 提示块标签{% endnote %}
+   {% note warning flat %}warning 提示块标签{% endnote %}
+   {% note danger flat %}danger 提示块标签{% endnote %}
+   ```
+
+4. `disabled`样式
+
+   ```
+   {% note disabled %}默认 提示块标签{% endnote %}
+   {% note default disabled %}default 提示块标签{% endnote %}
+   {% note primary disabled %}primary 提示块标签{% endnote %}
+   {% note success disabled %}success 提示块标签{% endnote %}
+   {% note info disabled %}info 提示块标签{% endnote %}
+   {% note warning disabled %}warning 提示块标签{% endnote %}
+   {% note danger disabled %}danger 提示块标签{% endnote %}
+   ```
+
+5. `no-icon`样式
+
+   ```
+   {% note no-icon %}默认 提示块标签{% endnote %}
+   {% note default no-icon %}default 提示块标签{% endnote %}
+   {% note primary no-icon %}primary 提示块标签{% endnote %}
+   {% note success no-icon %}success 提示块标签{% endnote %}
+   {% note info no-icon %}info 提示块标签{% endnote %}
+   {% note warning no-icon %}warning 提示块标签{% endnote %}
+   {% note danger no-icon %}danger 提示块标签{% endnote %}
+   ```
+
+`方法二`
+
+图标支持 `fontawesome` 和 `主题内置的阿里图标`，使用方法为加上对应的类名，`fontawesome`图标需开启主题配置文件中`icons.fontawesome`，默认未开启 fontawesome
+
+1. simple 样式
+
+   `主题内置阿里图标`
+
+   ```
+   {% note 'anzhiyufont anzhiyu-icon-rocket' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}2022 年快到了....{% endnote %}
+   {% note pink 'anzhiyufont anzhiyu-icon-instagram' simple %}小心开车 安全至上{% endnote %}
+   {% note red 'anzhiyufont anzhiyu-icon-fan' simple%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'anzhiyufont anzhiyu-icon-dengpao' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' simple %}剪刀石头布{% endnote %}
+   {% note green 'anzhiyufont anzhiyu-icon-ic_train' simple %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+   `fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+   ```
+   {% note 'fab fa-cc-visa' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'fas fa-bullhorn' simple %}2022 年快到了....{% endnote %}
+   {% note pink 'fas fa-car-crash' simple %}小心开车 安全至上{% endnote %}
+   {% note red 'icon-fan' simple%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'fas fa-battery-half' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'far fa-hand-scissors' simple %}剪刀石头布{% endnote %}
+   {% note green 'fab fa-internet-explorer' simple %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+2. modern 样式
+
+   `主题内置阿里图标`
+
+   ```
+   {% note 'anzhiyufont anzhiyu-icon-rocket' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' modern %}2022 年快到了....{% endnote %}
+   {% note pink 'anzhiyufont anzhiyu-icon-instagram' modern %}小心开车 安全至上{% endnote %}
+   {% note red 'anzhiyufont anzhiyu-icon-fan' modern%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'anzhiyufont anzhiyu-icon-dengpao' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' modern %}剪刀石头布{% endnote %}
+   {% note green 'anzhiyufont anzhiyu-icon-ic_train' modern %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+   `fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+   ```
+   {% note 'fab fa-cc-visa' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'fas fa-bullhorn' modern %}2021 年快到了....{% endnote %}
+   {% note pink 'fas fa-car-crash' modern %}小心开车 安全至上{% endnote %}
+   {% note red 'icon-fan' modern%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'fas fa-battery-half' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'far fa-hand-scissors' modern %}剪刀石头布{% endnote %}
+   {% note green 'fab fa-internet-explorer' modern %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+3. flat 样式
+
+   `主题内置阿里图标`
+
+   ```
+   {% note 'anzhiyufont anzhiyu-icon-rocket' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' flat %}2022 年快到了....{% endnote %}
+   {% note pink 'anzhiyufont anzhiyu-icon-instagram' flat %}小心开车 安全至上{% endnote %}
+   {% note red 'anzhiyufont anzhiyu-icon-fan' flat%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'anzhiyufont anzhiyu-icon-dengpao' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' flat %}剪刀石头布{% endnote %}
+   {% note green 'anzhiyufont anzhiyu-icon-ic_train' flat %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+   `fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+   ```
+   {% note 'fab fa-cc-visa' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'fas fa-bullhorn' flat %}2021 年快到了....{% endnote %}
+   {% note pink 'fas fa-car-crash' flat %}小心开车 安全至上{% endnote %}
+   {% note red 'icon-fan' flat%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'fas fa-battery-half' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'far fa-hand-scissors' flat %}剪刀石头布{% endnote %}
+   {% note green 'fab fa-internet-explorer' flat %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+4. disabled 样式
+
+   `主题内置阿里图标`
+
+   ```
+   {% note 'anzhiyufont anzhiyu-icon-rocket' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' disabled %}2022 年快到了....{% endnote %}
+   {% note pink 'anzhiyufont anzhiyu-icon-instagram' disabled %}小心开车 安全至上{% endnote %}
+   {% note red 'anzhiyufont anzhiyu-icon-fan' disabled%}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'anzhiyufont anzhiyu-icon-dengpao' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' disabled %}剪刀石头布{% endnote %}
+   {% note green 'anzhiyufont anzhiyu-icon-ic_train' disabled %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+   `fontawesome 图标`，开启主题配置文件中的`icons.fontawesome`为`true`后可见
+
+   ```
+   {% note 'fab fa-cc-visa' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue 'fas fa-bullhorn' disabled %}2021 年快到了....{% endnote %}
+   {% note pink 'fas fa-car-crash' disabled %}小心开车 安全至上{% endnote %}
+   {% note red 'icon-fan' disabled %}这是三片呢？还是四片？{% endnote %}
+   {% note orange 'fas fa-battery-half' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple 'far fa-hand-scissors' disabled %}剪刀石头布{% endnote %}
+   {% note green 'fab fa-internet-explorer' disabled %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+5. no-icon 样式
+
+   ```
+   {% note no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note blue no-icon %}2021 年快到了....{% endnote %}
+   {% note pink no-icon %}小心开车 安全至上{% endnote %}
+   {% note red no-icon %}这是三片呢？还是四片？{% endnote %}
+   {% note orange no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}
+   {% note purple no-icon %}剪刀石头布{% endnote %}
+   {% note green no-icon %}前端最讨厌的浏览器{% endnote %}
+   ```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+
+---
+
+## 音频 audio
+
+{% tabs 音频, 2 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% audio 音频链接 %}
+```
+
+<!-- endtab -->
+
+
+
+<!-- tab 样式预览 -->
+
+{% audio https://npm.elemecdn.com/anzhiyu-music@1.0.4/%E9%9D%92%E8%8A%B1%E7%93%B7/%E9%9D%92%E8%8A%B1%E7%93%B7.mp3 %}
+
+<!-- endtab -->
+
+
+
+<!-- tab 示例源码 -->
+
+```
+{% audio https://npm.elemecdn.com/anzhiyu-music@1.0.4/%E9%9D%92%E8%8A%B1%E7%93%B7/%E9%9D%92%E8%8A%B1%E7%93%B7.mp3 %}
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+
+---
+
+## 视频 video
+
+{% tabs 视频, 2 %}
+
+<!-- tab 标签语法 -->
+
+```
+{% video 视频链接 %}
+```
+
+<!-- endtab -->
+
+
+
+<!-- tab 参数配置 -->
+
+1. 对其方向：left, center, right
+2. 列数：逗号后面直接写列数，支持 1 ～ 4 列。
+
+<!-- endtab -->
+
+
+
+<!-- tab 样式预览 -->
+
+1. 100%宽度
+
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+
+2. 50%宽度
+
+   {% videos, 2 %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% endvideos %}
+
+3. 25%宽度
+
+   {% videos, 4 %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% endvideos %}
+
+<!-- endtab -->
+
+
+
+<!-- tab 示例源码 -->
+
+1. 100%宽度
+
+   ```
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   ```
+
+2. 50%宽度
+
+   ```
+   {% videos, 2 %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% endvideos %}
+   ```
+
+3. 25%宽度
+
+   ```
+   {% videos, 4 %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% endvideos %}
+   ```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+
+
+
+
+
+
+
+
+
+
+

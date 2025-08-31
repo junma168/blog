@@ -7,7 +7,7 @@ categories:
   - 教程
   - hexo
 cover: >-
-  https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvYy9mNzAwYmM1NGU3YTk2MWQ1L0VaYkF4VW53U0lOR2htQVptbE9IajUwQjhTbVB6WW9fTlowa196RXd0Ry1YbFE_ZT1kemtCeHI.png
+  https://lz.qaiu.top/parser?url=https://cloud.189.cn/web/share?code=uUrUjym6feEn（访问码：z1ph）
 date: 2025-08-26 21:16:07
 ---
 {% note modern %}由于各大音乐网站有vip限制，无法集成vip音乐到博客当中，但可以想一个折中的方法，可以利用OneDrive将歌曲存入，分享，然后利用直链工具即可。{% endnote %}
@@ -39,3 +39,12 @@ date: 2025-08-26 21:16:07
 ``https://api.codetabs.com/v1/proxy?quest=你的直链URL``
 
 **注意**：代理服务可能不稳定，仅建议用于开发测试。
+永久图片测试：
+![pVUDsDf.jpg](https://lz.qaiu.top/parser?url=https://cloud.189.cn/web/share?code=mu2e6byiYB7f（访问码：2pwv）)
+
+测试2：
+  原链接：https://cloud.189.cn/web/share?code=uUrUjym6feEn（访问码：z1ph）
+  智能直链：![新建歌单封面.png](https://lz.qaiu.top/parser?url=https://cloud.189.cn/web/share?code=uUrUjym6feEn（访问码：z1ph）)
+  解析链接：![新建歌单封面.png](https://download.cloud.189.cn/file/downloadFile.action?dt=61&expired=1756546590083&sid=12520117685924&sk=4beb5d09-0b03-41dc-a0c9-566f2a1fde91&zyc=5&token=cloud4&sig=FisJB4KBzNTtvhM2Tv%2BmmMsCtFU%3D&filename=新建歌单封面.png)
+
+
