@@ -12,7 +12,7 @@ layout: false  # 这很重要，避免使用主题的布局
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>本质微光 - 全屏音乐播放器</title>
+    <title>音乐殿堂</title>
     
     <!-- 使用您博客的favicon -->
     <link rel="icon" href="/avatar_32x32.ico" type="image/x-icon">
@@ -435,7 +435,7 @@ layout: false  # 这很重要，避免使用主题的布局
                 <div class="grid-square"></div>
                 <div class="grid-square"></div>
             </div>
-            <span>本质微光</span>
+            <span>音乐殿堂</span>
         </a>
         
         <button class="menu-toggle" id="menu-toggle">

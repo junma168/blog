@@ -1076,7 +1076,7 @@ home_top:
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
   banner:
-    tips: 本质微光
+    tips: 成长日迹
     title: 博客
     image: https://s21.ax1x.com/2025/08/20/pVBXpLj.jpg
     link: /about
