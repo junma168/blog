@@ -7,11 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "dev": "hexo cl && hexo g && hexo s",
-    "build:hexo": "hexo generate",
-    "build:vitepress": "cd vitepress-docs && npm run build",
-    "build": "npm run build:vitepress && npm run build:hexo",
-    "copy:vitepress": "cp -R vitepress-docs/.vitepress/dist/ public/vitepress/"
+    "dev": "hexo cl && hexo g && hexo s"
   },
   "hexo": {
     "version": "7.3.0"
