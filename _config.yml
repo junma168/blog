@@ -74,7 +74,7 @@ deploy:
   type: git
   repo: https://github.com/junma168/blog.git
   branch: master
-  message: 更新配置文件信息
+  message: 更新文档
 envelope_comment:
   enable: true
   custom_pic:
