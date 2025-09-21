@@ -6,7 +6,7 @@ tags:
 categories:
   - 教程
 cover: >-
-  https://lz.qaiu.top/parser?url=https://cloud.189.cn/web/share?code=Afym6jJ7Bjuu（访问码：u00p）
+  https://preview.cloud.189.cn/image/imageAction?param=AC0F139CAC578D52397C33F1C2848981148718CFC0BFF7CF2F51C0B80A0CAB26B00EC09C3BD3DACC46C205AEA7272C06419D7FC5086D11DBC015521A8323CAC50E6560603C8B031A0737E889DF1B9E846E49DE65F74187A020E357FEF4474D8057328284CC3BBDFF99B3C9602F15A681769FC7DB
 date: 2025-09-09 00:16:52
 ---
 最近利用hexoPro部署项目到GitHub上面总是报错，发现是GitHub链接有问题，于是在往上找到了一个方法。
@@ -15,14 +15,14 @@ date: 2025-09-09 00:16:52
 
 通过在线DNS解析网站例如https://www.ipaddress.com/, 在`Lookup any IP Address or Website`处输入域名`github.com`,获取A记录的ip即可,如下图：
 
-![ip获取](https://lz.qaiu.top/parser?url=https://cloud.189.cn/web/share?code=3QZr6faMr6Vz（访问码：nt7l）)
+![ip获取](https://preview.cloud.189.cn/image/imageAction?param=1237EA03A8DCC9B52BB4C983E902C0525D0751624B40B7FD357AA1070B47826ED7F3DDEB7F0C46B359C9D3C23C338378E48D57EDAA89F4FEB1D98B8E0901835438363D5E657B701197FD4272A2B29DF46FF496320762CD8AEF812E4298B392D9CD049B727BA015A2689A8EC1EB154DB6021EE25B)
 把获取到的对应IP拷贝出来
 
 # 第二步：修改 hosts 文件
 
 将拷贝出来的IP复制到hosts文件（文件路径为C:\Windows\System32\drivers\etc），配置为
 
-![host修改](https://lz.qaiu.top/parser?url=https://cloud.189.cn/web/share?code=UrEfIbMvQfaq（访问码：u8ta）)
+![host修改](https://preview.cloud.189.cn/image/imageAction?param=279AA11515B15C85E055435513FE818F4816517606677A10A6DA1FAFED976A24FDE34B3711E00615D9CFBF9FD266D62660C0878A1544A057FB0CC26D9BB1DC38165FB38C772A407CBE5376035135E941843229652B2D6591A796F209AE953E98A4A0176F8D7D7C41A0ED83C8AA8B1E67530DDFED)
 配置好后，点击保存即可。如果配置后，提示保存不了，可以复制该文件到桌面，重新配置后点击保存，然后再次复制覆盖掉原文件即可。
 
 # 第三步：刷新 DNS 缓存
